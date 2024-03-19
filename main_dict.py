@@ -26,6 +26,7 @@ def prefix_zone_finder(num_as_str: str):
     повторяется до нахождения префикса или присвоения значения "Unknown".
 
     :param num_as_str: (str) номер телефона в строчном представлении.
+
     :return: (tuple[str, str]) кортеж из наиболее релевантного префикса и соответствующей ему зоны.
     """
 
@@ -106,6 +107,6 @@ def synthetic_files_parser(synth_dir_path: str) -> None:
 if __name__ == "__main__":
     res = datetime.datetime.now()
     print(f'Код пошел выполняться в: {res=}')
-    prefixes_dict = prefixes_dict_creator('D:/SCRIPTS/test/test_task/python/KT/var1/Префиксы телефонных номеров (CSV)')
-    synthetic_files_parser('D:/SCRIPTS/test/test_task/python/KT/var1/Синтетические данные (CSV)')
+    prefixes_dict = prefixes_dict_creator('/home/user/PycharmProjects/MTStestproject/prefixes')
+    synthetic_files_parser('/home/user/PycharmProjects/MTStestproject/synthetisCDRdata')
     print(f'Время следующее:{datetime.datetime.now() - res}')

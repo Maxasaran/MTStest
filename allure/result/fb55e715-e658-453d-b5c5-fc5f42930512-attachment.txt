@@ -1,0 +1,1 @@
+We got some exc=NameError("name 'prefixes_dict' is not defined"), script stopped, report sent to admin =)
